@@ -25,23 +25,60 @@ This project is a Streamlit web application designed to analyze traffic violatio
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repository-name.git
-    cd your-repository-name
+    git clone https://github.com/saidulalimallick04/smart-traffic-violation-pattern-detector-dashboard.git
+    cd smart-traffic-violation-pattern-detector-dashboard
     ```
-2.  **Create and activate a virtual environment:**
-    ```bash
-    python -m venv .venv
-    # On Windows: .\.venv\Scripts\activate
-    # On macOS/Linux: source .venv/bin/activate
-    ```
-3.  **Install the dependencies:**
-    ```bash
-    pip install .
-    ```
-4.  **Run the application:**
-    ```bash
-    streamlit run app.py
-    ```
+
+2.  **Choose your package manager:**
+
+    ---
+
+    ### Alternative 1: Using `uv` (Recommended)
+
+    1.  **Create and activate a virtual environment:**
+        ```bash
+        # Create a virtual environment
+        uv venv
+        
+        # Activate the virtual environment
+        # On Windows
+        .\.venv\Scripts\activate
+        # On macOS/Linux
+        source .venv/bin/activate
+        ```
+
+    2.  **Install dependencies:**
+        ```bash
+        uv pip install .
+        ```
+
+    3.  **Run the application:**
+        ```bash
+        streamlit run app.py
+        ```
+
+    ---
+
+    ### Alternative 2: Using `pip`
+
+    1.  **Create and activate a virtual environment:**
+        ```bash
+        python -m venv .venv
+        # On Windows
+        .\.venv\Scripts\activate
+        # On macOS/Linux
+        source .venv/bin/activate
+        ```
+
+    2.  **Install dependencies:**
+        ```bash
+        pip install .
+        ```
+
+    3.  **Run the application:**
+        ```bash
+        streamlit run app.py
+        ```
 
 ## 📂 Project Structure
 
@@ -52,13 +89,22 @@ This project is a Streamlit web application designed to analyze traffic violatio
 ├── app.py
 ├── core
 │   ├── __init__.py
+│   ├── data_generator.py
+│   ├── data_variables.py
 │   ├── sidebar.py
+│   ├── summary.py
 │   └── utils.py
 ├── dataset
 │   └── Indian_Traffic_Violations.csv
+├── generated_fake_traffic_datasets
+│   └── 2025-11-24
+│       ├── 01_traffic_dataset.csv
+│       └── 02_traffic_dataset.csv
 ├── map_data
 │   ├── 01_INDIA_STATES.geojson
 │   └── india_states.geojson
+├── other_party_uploads
+│   └── AnimalDataLabel.csv
 ├── pages
 │   ├── 01_Numerical_Analysis.py
 │   ├── 02_Visualize_Data.py
@@ -68,7 +114,7 @@ This project is a Streamlit web application designed to analyze traffic violatio
 │   └── 10_View_Dataset.py
 ├── pyproject.toml
 ├── README.md
-├── uploaded_datasets
+├── related_uploads
 └── uv.lock
 ```
 

@@ -173,7 +173,15 @@ weather_conditions_list = [
     "Foggy", "Foggy", 
     "Snowy", 
 ]
-road_conditions_list = ["Dry", "Wet", "Under Construction", "Gravel", "Potholes"]
+
+road_conditions_list = [
+    "Dry", "Dry", "Dry", "Dry", "Dry", 
+    "Wet", "Wet", "Wet", 
+    "Under Construction", 
+    "Potholes", "Potholes", "Potholes",
+    "Gravel", 
+
+]
 
 # -------------------- Locations --------------------
 # Increased occurrence of some states to raise their selection probability.
@@ -216,7 +224,6 @@ payment_methods_mapping  = {
     'No' : 'Pending'
 }
 
-
 # -------------------------- ACTION TAKEN --------------------------
 towing_mapping = {
     # High Possibilities
@@ -237,20 +244,21 @@ towing_mapping = {
 
 court_mapping = {
     # --- SERIOUS OFFENSES (Mandatory Court/Magistrate) ---
-    "Hit and Run": "Yes",             # Criminal offense (IPC), strictly court.
-    "Drunk Driving": "Yes",           # Mandatory court appearance for sentencing/fine.
-    "Driving Without License": "Yes", # Often sent to court due to high fine amount (Sec 181).
+    "Hit and Run": random.choice(["Yes", "Yes", "Yes", "No"]), # 60% -> Yes, 40% -> No
+    "Overloading": random.choice(["Yes", "Yes", "No", "No"]), # 50% -> Yes, 50% -> No,
+    "Drunk Driving": random.choice(["Yes", "Yes", "Yes", "No", "No"]), # 60% -> Yes, 40% -> No,
+    "Driving Without License": random.choice(["Yes", "Yes", "Yes", "No", "No"]), # 60% -> Yes, 40% -> No,
     
     # --- STANDARD TRAFFIC VIOLATIONS (Compounding/Spot Fines) ---
-    "Overspeeding": "No",             # usually settled via Camera/Online Challan.
-    "Red Light Violation": "No",      # usually settled via Camera/Online Challan.
-    "Wrong Lane": "No",               # Spot fine.
-    "No Parking": "No",               # Pay towing charge + fine to release vehicle.
-    "Seatbelt Violation": "No",       # Spot fine.
-    "Helmet Violation": "No",         # Spot fine.
-    "Mobile Phone Usage": "No",       # Spot fine (though license seizure is possible).
-    "Illegal U Turn": "No",           # Spot fine.
-    "Overloading": "No"               # Usually settled with RTO/Police fine, unless commercial/extreme.
+    "Overspeeding": "No",
+    "Red Light Violation": "No",
+    "Wrong Lane": "No", 
+    "No Parking": "No",          
+    "Seatbelt Violation": "No",
+    "Helmet Violation": "No",
+    "Mobile Phone Usage": "No",      
+    "Illegal U Turn": "No",           
+    "Overloading": "No"               
 }
 
 comments_list = [
