@@ -137,4 +137,3 @@ st.markdown("""
     </marquee>
 </div>
 """, unsafe_allow_html=True)
-st.success("✔ Designed using Python, Streamlit, Pandas, Matplotlib, Seaborn, HTML & CSS")
