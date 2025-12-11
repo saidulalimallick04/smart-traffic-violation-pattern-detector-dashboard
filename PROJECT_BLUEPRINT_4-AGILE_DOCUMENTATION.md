@@ -108,20 +108,20 @@ Reflecting on the "CollisionX India" team performance.
 | 6 | Sprint 3 | Nov 10 | Nov 23 | Poojitha | Using relative path keys for navigation. | Hardcoding page filenames in links. | Modularizing the Sidebar code. | Refactored `sidebar.py` to be robust against file renaming. |
 | 7 | Sprint 4 | Nov 24 | Dec 07 | Saidul | Validating GeoJSON files before implementation. | Ignoring projection errors. | searching for open-source resources. | Implemented specific GeoJSON validation step in `map_plot.py`. |
 | 8 | Sprint 4 | Nov 24 | Dec 07 | All | Using standard Variable names (Data Variables). | Hardcoding column names in pages. | collaborating on plotting logic. | Refactored all page hardcoding to usage of `data_variables.py`. |
-| 9 | Sprint 4 | Nov 24 | Dec 07 | Mounika P | Cross-browser testing (Chrome/Edge/Firefox). | Waiting for DEV completion to start QA. | Logging defects in the shared Tracker. | Identified 2 critical UI bugs (BUG-03, BUG-06) before final demo. |
+| 9 | Sprint 4 | Nov 24 | Dec 07 | Mounika P | Cross-browser testing (Chrome/Edge/Firefox). | Waiting for DEV completion to start QA. | Logging defects in the shared Tracker. | Identified 2 critical UI bugs (BUG-03, BUG-05) before final demo. |
 
 ---
 
 ## 5. 🐛 Defect Tracker
 
-| Sl No | Description | Detected Sprint | Assigned To | Type | Action Taken | Status |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| BUG-01 | **Map Visibility:** Map not loading for certain States. | Sprint 4 | Saidul | Data | Swapped broken GeoJSON with valid Open Source files found online. | Closed |
-| BUG-02 | **Merge Conflict:** Logic overwrites in `app.py`. | Sprint 2 | Anshu | Process | Restricted main branch; enforced 7-branch workflow. | Closed |
-| BUG-03 | **Visuals:** Bar charts overlapping. | Sprint 3 | Sanjana | UI | Adjusted figure size and rotation using Matplotlib params. | Closed |
-| BUG-04 | **Analysis:** Complex filters causing slow load. | Sprint 3 | Darsana | Perf | Optimization assistance from AI tools (Claude). | Closed |
-| BUG-05 | **Encoding Error:** CSVs with special chars failing. | Sprint 2 | Divija | Data | Added `latin-1` fallback in `utils.py`. | Closed |
-| BUG-06 | **UI Glitch:** Sidebar overlapping text. | Sprint 3 | Ishwari | UI | Applied custom CSS media queries for responsive layout. | Closed |
+| Sl No | Submitted By | Submitted Date | Description | Detected Sprint | Assigned To | Type Of Defect | Action Taken | Action Taken Date | Status(Open/Closed) | Remarks |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| BUG-01 | Anshu | Nov 02 | **Merge Conflict:** Logic overwrites in `app.py`. | Sprint 2 | Anshu | Process | Restricted main branch; enforced 7-branch workflow. | Nov 03 | Closed | Process Updated |
+| BUG-02 | Divija | Nov 05 | **Encoding Error:** CSVs with special chars failing. | Sprint 2 | Divija | Data | Added `latin-1` fallback in `utils.py`. | Nov 06 | Closed | Critical Fix |
+| BUG-03 | Mounika P | Nov 18 | **Visuals:** Bar charts overlapping. | Sprint 3 | Sanjana | UI | Adjusted figure size and rotation using Matplotlib params. | Nov 19 | Closed | Verified |
+| BUG-04 | Darsana | Nov 20 | **Analysis:** Complex filters causing slow load. | Sprint 3 | Darsana | Perf | Optimization assistance from AI tools (Claude). | Nov 21 | Closed | Optimized |
+| BUG-05 | Mounika P | Nov 22 | **UI Glitch:** Sidebar overlapping text. | Sprint 3 | Ishwari | UI | Applied custom CSS media queries. | Nov 23 | Closed | Verified |
+| BUG-06 | Saidul | Dec 01 | **Map Visibility:** Map not loading for certain States. | Sprint 4 | Saidul | Data | Swapped broken GeoJSON with valid Open Source files. | Dec 02 | Closed | Fixed |
 
 ---
 
