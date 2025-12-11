@@ -163,7 +163,7 @@ The main dependencies for this project are listed in the `pyproject.toml` file. 
   * **Refactoring:** **Vijay G** optimized the utility functions in `core/utils.py` to handle large datasets more efficiently.
 
 * **2025-11-26:**
-  * **Map Visualization:** **Saidul** successfully integrated Open Source GeoJSON files to resolve region mismatch issues in the Map module.
+  * **Map Visualization:** **Saidul** successfully integrated Open Source GeoJSON files to resolve region mismatch issues in the Map Module.
   * **Trend Analysis:** **Rakshitha** implemented the "Peak Hour Traffic" analysis to identify high-risk time windows.
 
 * **2025-11-25:**
